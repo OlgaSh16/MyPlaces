@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6JG-iJ-qUz">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,18 +13,71 @@
         <scene sceneID="ZDt-k3-xVm">
             <objects>
                 <tableViewController id="cxf-E6-h7U" customClass="MainViewController" customModule="TableViewCourse" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="set-Zg-Mqc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="set-Zg-Mqc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="5aV-kk-v0o">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="85" id="5aV-kk-v0o" customClass="CustomTableViewCell" customModule="TableViewCourse" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aV-kk-v0o" id="jSO-aP-4nQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="84.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FOu-S1-mDo">
+                                            <rect key="frame" x="15" y="10" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="OfM-2y-iAZ"/>
+                                                <constraint firstAttribute="height" constant="65" id="etX-bj-FFO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-Mr-ek1">
+                                            <rect key="frame" x="95" y="9" width="303" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="oYR-v3-cFd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDN-Dc-Vkv">
+                                            <rect key="frame" x="95" y="35" width="303" height="18"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKh-6S-tB3">
+                                            <rect key="frame" x="95" y="54" width="303" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="rgM-po-U1x"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LDN-Dc-Vkv" firstAttribute="top" secondItem="ODc-Mr-ek1" secondAttribute="bottom" constant="5" id="3pq-Px-rZp"/>
+                                        <constraint firstItem="FOu-S1-mDo" firstAttribute="centerY" secondItem="jSO-aP-4nQ" secondAttribute="centerY" id="E65-i4-8QA"/>
+                                        <constraint firstItem="FOu-S1-mDo" firstAttribute="leading" secondItem="jSO-aP-4nQ" secondAttribute="leading" constant="15" id="IDK-Ih-iLx"/>
+                                        <constraint firstAttribute="trailing" secondItem="ODc-Mr-ek1" secondAttribute="trailing" constant="16" id="QTE-Bl-soY"/>
+                                        <constraint firstAttribute="bottom" secondItem="UKh-6S-tB3" secondAttribute="bottom" constant="9.6699999999999999" id="RoH-5T-y2H"/>
+                                        <constraint firstAttribute="trailing" secondItem="UKh-6S-tB3" secondAttribute="trailing" constant="16" id="VKE-6K-tdX"/>
+                                        <constraint firstItem="LDN-Dc-Vkv" firstAttribute="leading" secondItem="FOu-S1-mDo" secondAttribute="trailing" constant="15" id="YsN-gF-RGb"/>
+                                        <constraint firstItem="UKh-6S-tB3" firstAttribute="top" secondItem="LDN-Dc-Vkv" secondAttribute="bottom" constant="1" id="aT4-kz-ojg"/>
+                                        <constraint firstItem="ODc-Mr-ek1" firstAttribute="top" secondItem="jSO-aP-4nQ" secondAttribute="top" constant="9" id="ec8-WH-QcU"/>
+                                        <constraint firstItem="UKh-6S-tB3" firstAttribute="leading" secondItem="FOu-S1-mDo" secondAttribute="trailing" constant="15" id="jpv-cH-gd0"/>
+                                        <constraint firstItem="ODc-Mr-ek1" firstAttribute="leading" secondItem="FOu-S1-mDo" secondAttribute="trailing" constant="15" id="qak-Oq-ynF"/>
+                                        <constraint firstAttribute="trailing" secondItem="LDN-Dc-Vkv" secondAttribute="trailing" constant="16" id="y8G-GU-wU2"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageOfPlace" destination="FOu-S1-mDo" id="8If-uN-2ln"/>
+                                    <outlet property="locationLabel" destination="LDN-Dc-Vkv" id="kbl-oT-U5f"/>
+                                    <outlet property="nameLabel" destination="ODc-Mr-ek1" id="bAO-wL-HmG"/>
+                                    <outlet property="typeLabel" destination="UKh-6S-tB3" id="iFD-k0-rWT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +89,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKx-Z5-Eqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011.5942028985507" y="183.48214285714286"/>
+            <point key="canvasLocation" x="1011.5942028985507" y="183.42391304347828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jdn-WK-Cvr">
@@ -44,7 +97,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6JG-iJ-qUz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xRo-GH-qh2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
