@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Места, где можно покушать-->
         <scene sceneID="ZDt-k3-xVm">
             <objects>
                 <tableViewController id="cxf-E6-h7U" customClass="MainViewController" customModule="TableViewCourse" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="cxf-E6-h7U" id="scw-gu-EY6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jfW-z1-MyB"/>
+                    <navigationItem key="navigationItem" title="Места, где можно покушать" id="jfW-z1-MyB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKx-Z5-Eqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +46,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xRo-GH-qh2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
