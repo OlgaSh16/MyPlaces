@@ -17,6 +17,7 @@
 		BCE82E8122B56B450026A579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE82E7422B560060026A579 /* Assets.xcassets */; };
 		BCE82E8322B570D70026A579 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE82E8222B570D70026A579 /* CustomTableViewCell.swift */; };
 		BCEA8DE622B613A400150523 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA8DE522B613A400150523 /* PlaceModel.swift */; };
+		BCEB942622B89AFF00698B17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB942522B89AFF00698B17 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BCE82E7F22B560600026A579 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BCE82E8222B570D70026A579 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		BCEA8DE522B613A400150523 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		BCEB942522B89AFF00698B17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				BCE82E6D22B560030026A579 /* AppDelegate.swift */,
 				BCE82E7122B560030026A579 /* Main.storyboard */,
+				BCEB942522B89AFF00698B17 /* MapViewController.swift */,
 				BC277F6922B622EE00ECCB23 /* NewPlaceViewController.swift */,
 				BCEA8DE522B613A400150523 /* PlaceModel.swift */,
 				BC277F6B22B65B6D00ECCB23 /* StorageManager.swift */,
@@ -221,6 +224,7 @@
 				BC277F6C22B65B6D00ECCB23 /* StorageManager.swift in Sources */,
 				BCE82E6E22B560030026A579 /* AppDelegate.swift in Sources */,
 				BCE82E8022B560600026A579 /* MainViewController.swift in Sources */,
+				BCEB942622B89AFF00698B17 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
